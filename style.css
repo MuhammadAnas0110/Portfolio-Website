@@ -386,7 +386,7 @@ font-size: 20px;
 .details{
     border-radius: 5px;
     width: 350px;
-    height: 350px;
+    height: 250px;
     display: inline-flex;
     background-color: rgb(111, 108, 108);
     flex-direction: column;
@@ -494,6 +494,11 @@ font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.offer-3-1:hover{
+    transform:scale(1.1);
 }
 .mypic-2{
     border: 5px solid rgba(52, 97, 176, 0.609) ;

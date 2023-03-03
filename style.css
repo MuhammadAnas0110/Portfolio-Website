@@ -1,94 +1,519 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-.menu{
-    height: 100vh;
-    width: 100%;
-    background-image: url(./img.jpg);
-    background-size: cover;
-    background-position: center;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-.logo{
-    color:  rgb(201, 156, 32);
-    font-size:35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 25px;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-nav ul li a:hover{
-    color: rgb(114, 9, 9);
-    transition: .4s;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32);
 }
 
-.content{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-60%);
+/* navigation bar css starts */
+.nav{
+ padding: 5px;
+ display: flex;
+ min-width: 800px;
 }
-h1{
-    color: rgb(226, 173, 57);
-    margin: 20px 0px 20px;
-    font-size: 50px;
-}
-h4{
-    max-width: 300px;
-}
-.services{
-    color: rgb(201, 156, 32);
-    position: absolute;
-    top: 50%;
-    right: 8% ;
-    transform: translateY(-200%);
-}
-.bottom{
-    left: 30%;
-    right: 30%;
-    bottom: 10%;
-    height: 100px;
-    background-color: rgba(104, 103, 103, 0.418);
-    position: absolute;
+
+
+.nav1{
+    width: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
-.bottom-contents{
-    height: 50px;
-    width: 100px;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(59, 59, 77, 0.418);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.smile{ 
+    color: rgb(17, 68, 187);
+}
+
+
+.nav2{
+    width: 65%;
+}
+li{
+    display: inline;
+    padding: 10px;
     cursor: pointer;
 }
-.bottom-contents:hover{
-    color: rgb(114, 9, 9);
-    transition: .4s;
+li:hover{
+    text-decoration: underline;
+    color: rgb(17, 68, 187);
 }
-span{
-    color: rgba(22, 57, 122, 0.733);
+li:active{
+    text-decoration: underline;
+    color: rgb(157, 182, 241);
 }
+
+
+.nav3{
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.material-symbols-rounded{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.material-symbols-rounded:hover{
+    transform:scale(1.5);
+    color: rgb(17, 68, 187);
+}
+.material-symbols-rounded:active{
+    transform:scale(1.5);
+    color: rgb(157, 182, 241);
+}
+/* navigation bar css ends */
+
+/* css content of first page starts */
+.intro{
+    margin-left: 100px;
+    margin-top: 150px;
+    height: 285px;
+    width: 500px;
+}
+.intro-1{
+font-size: 40px;
+}
+.intro-2{
+font-size: 50px;
+}
+.intro-3{
+    border: solid 3px  rgb(17, 68, 187);
+    background-color:  rgb(17, 68, 187);
+    width: 300px;
+    border-radius: 20px;
+    }
+.intro-4{
+font-size: 20px;
+height: 153px;
+width: 300px;
+}
+.mypic{
+
+    border-radius: 1000px;
+    background-color: rgba(111, 108, 108, 0.528);
+    height: 500px;
+    width: 500px;
+    margin-top: -400px;
+    margin-left: 450px;
+    text-align: center;
+}
+.pic{
+    border-radius: 50px;
+    height: 500px;
+    width: 350px;
+    background-color: rgba(111, 108, 108, 0);
+}
+.services{
+    margin-left: 1000px;
+    margin-top: -350px;
+    height: 300px;
+    width: 300px;
+}
+.services-1{
+
+}
+.services-2{
+font-size: 20px;
+}
+.services-3{
+    height: 20px;
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.services-3:hover{
+    text-decoration: underline;
+    color: rgb(17, 68, 187);
+}
+.services-3:active{
+    text-decoration: underline;
+    color: rgb(157, 182, 241);
+}
+
+
+
+.social-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li a {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(111, 108, 108);
+    transition: 0.3s;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.fa-brands{
+    background-color: rgb(111, 108, 108);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #0f2f72;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #b71f61;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+
+
+.buttons{
+    border-radius: 10px;
+    background-color: rgb(111, 108, 108);
+    height: 100px;
+    width: 800px;
+    margin: 50px 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.meta{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 
+    0.5s;
+}
+.meta:hover{
+    transform:scale(1.1);
+}
+.meta-logo{
+    height: 25px;
+    width: 85px;
+}
+.google{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.google:hover{
+    transform:scale(1.1);
+}
+.google-logo{
+    height: 23px;
+    width: 70px;
+}
+.linkedin{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.linkedin:hover{
+    transform:scale(1.1);
+}
+.linkedin-logo{
+    height: 20px;
+    width: 20px;
+}
+.slack{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.slack:hover{
+    transform:scale(1.1);
+}
+.slack-logo{
+    height: 20px;
+    width: 20px;
+}
+/* css content of first page ends */
+
+
+/* css of services offer on 2nd page starts*/
+.services-offers{
+    height: 300px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.services-offers-1{
+    font-size: 35px;
+}
+.services-offers-3{
+    display: flex;
+    flex-flow: wrap;
+}
+.srvs-ofr-1{
+    width: 200px;
+}
+.services-offers-3-1{
+    color: rgb(87, 84, 238);
+    font-size: 30px;
+}
+.services-offers-3-2{
+    font-size: 12px;
+}
+.services-offers-3-3{
+    color: rgb(87, 84, 238);
+    font-size: 30px;
+}
+.services-offers-3-4{
+    font-size: 12px;
+}
+.services-offers-3-5{
+    color: rgb(87, 84, 238);
+    font-size: 30px;
+}
+.services-offers-3-6{
+    font-size: 12px;
+}
+.services-offers-3-7{
+    color: rgb(87, 84, 238);
+    font-size: 30px;
+}
+.services-offers-3-8{
+    font-size: 12px;
+}
+
+
+.projects{
+    margin-left: 675px;
+    margin-top: -325px;
+    height: 480px;
+    width: 600px;
+}
+
+
+.projects-1{
+    height: 150px;
+    display:inline-flex;
+}
+
+
+.projects-2{
+    height: 150px;
+    display:inline-flex;
+}
+
+
+.projects-3{
+    height: 150px;
+    display:inline-flex;
+}
+.project-pictures{
+    height: 140px;
+    width: 245px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.project-pictures:hover{
+    transform:scale(1.06);
+}
+.projects-1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 260px;
+}
+.projects-1-2{
+    height: 140px;
+    width: 260px;
+}
+.projects-1-3{
+     height: 140px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-1{
+    font-size: 25px;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+.info-1:hover{
+    text-decoration: underline;
+    color: rgb(17, 68, 187);
+}
+.info-2{
+    height: 50px;
+    font-size: 13px;
+    display: flex;
+}
+
+
+.services-details{
+    border-radius: 5px;
+    height: 360px;
+    width: 1090px;
+    margin-left: 140px;
+    margin-top: 150px;
+    padding: 10px;
+}
+.details{
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    display: inline-flex;
+    background-color: rgb(111, 108, 108);
+    flex-direction: column;
+    
+}
+.details-1{
+    border-radius: 5px;
+    background-color: rgb(111, 108, 108);
+    width: 340px;
+    height: 100px;
+}
+.fa-solid{
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+    font-size: 40px;
+    border-radius: 50px;
+    color: rgb(17, 68, 187);
+}
+.logo-details-1{ 
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: rgb(32, 32, 32);
+}
+.details-2{
+    border-radius: 5px;
+    background-color: rgb(111, 108, 108);
+    height: 50px;
+    width: 340px;
+    font-size: 30px;
+}
+
+.details-3{
+    border-radius: 5px;
+    background-color: rgb(111, 108, 108);
+    height: 200px;
+    width: 300px;
+}
+
+
+/* css of introduction on 3rd page starts*/
+.introduction-1{
+    margin-left: 150px;
+    margin-top: 150px;
+    height: 400px;
+    width: 400px;
+}
+.random-pic{
+    height: 320px;
+    width: 410px;
+    border-radius: 5px;
+}
+.introduction-2{
+    margin-left: 600px;
+    margin-top: -410px;
+    height: 400px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-user{
+    border-radius: 75px;
+    background-color: rgb(111, 108, 108);
+
+}
+.introduction-2-2{
+
+     width: 450px;
+}
+.introduction-2-3{
+
+    font-size: 30px;
+}
+.introduction-2-5{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.offer{
+    margin-left: 150px;
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+}
+.offer-1{
+    font-size: 40px;
+}
+.offer-2{
+    font-size: 20px;
+    
+}
+.offer-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer-3-1{
+     height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: rgb(111, 108, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mypic-2{
+    border: 5px solid rgba(52, 97, 176, 0.609) ;
+    margin-left: 800px;
+    margin-top: -470px;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+.pic2{
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+/* css of introduction on 3rd page ends*/
